@@ -1,0 +1,25 @@
+AllCops:
+  TargetRubyVersion: 2.7
+  NewCops: enable
+  SuggestExtensions: false
+  Exclude:
+    - 'vendor/**/*'
+    - 'Gemfile*'
+
+# 日本語コメント許可
+Style/AsciiComments:
+  Enabled: false
+
+# クラスの長さ
+Metrics/ClassLength:
+  CountComments: false
+  Max: 3000
+
+# メソッドの長さ
+Metrics/MethodLength:
+  CountComments: false
+  Max: 120
+
+# Numric style
+Style/NumericLiterals:
+  Enabled: false
